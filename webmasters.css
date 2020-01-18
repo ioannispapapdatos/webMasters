@@ -21,3 +21,64 @@ color: white;
 
 
 }
+
+#navlink{
+	color:white;
+	font-size: 
+
+
+}
+#navlink:hover{
+	color: red;
+}
+
+
+
+
+.dropbtn {
+  background-color: ;
+  color:white;
+  padding: 13px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 1px;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 10px 10px;
+  font-size: small;
+ 
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown-content a:hover
+ {background-color:lightblue;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
