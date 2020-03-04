@@ -1,23 +1,135 @@
 #lang {
 
-	width: 32px;
-	height: 32px;
+	width: 33px;
+	height: 323px;
 	margin: 2px;
 }
 
 
 body{
-background: #c31432;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #c31432;  
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+background: linear-gradient(to right, #240b36, #c31432); 
 color: white;
 }
 
 .jumbotron {
 
-	background: purple;
-	padding: 10px;
-
+background: #c31432;  
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+background: linear-gradient(to right, #240b36, #c31432); 
+padding: 10px;
+color: white;
 
 
 }
+.title{
+   
+	border:2px solid tomato;
+	border-radius: 40%;
+
+	
+	
+	box-shadow: 5px 5px tomato;
+	
+
+}
+ #privateImage {
+ 	width:90px; 
+ 	height: 110px;
+ 	 border-radius: 
+ 	 50%; right: 160px;
+ 	 border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+     
+
+ 	
+ }
+
+ #privateImage :hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#link1-img {
+
+  filter: blur(px);
+}
+
+.navlink :hover{
+	color:red;
+
+
+}
+
+.fafa{
+
+	
+	background: pink;
+}
+
+#social{
+
+	height: 30px;
+	width: 120px
+}
+
+img:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+h2,h5{
+
+	  text-shadow: 2px 2px #FF0000;
+
+}
+
+#logo-links{
+
+	margin: 10px;
+	padding: 7px;
+}
+
+.btn{
+
+	margin: 7px;
+}
+
+
+.jumbotron {
+
+	padding: 20px;
+
+  
+
+}
+
+#backImg{
+
+	right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
