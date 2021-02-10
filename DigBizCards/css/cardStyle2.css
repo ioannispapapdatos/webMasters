@@ -1,0 +1,83 @@
+body{
+
+  background: rgb(6, 72, 116);
+  color: white;
+}
+
+
+/* overlay effect */
+#container {
+  position: relative;
+  background: purple;
+  box-shadow: 2px 3px 4px black;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 12px;;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.image {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: auto; */
+  position: absolute;
+  top: 66px;
+  left: 110px;
+}
+/* .scanImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  
+  background-color: #171a1b;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+#container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  box-shadow: 1px 2px 1px 1px white;
+}
+
+.backside {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+i{
+  color: beige;
+}
+
+.social{
+  position: absolute;
+  top: 10px;
+  left: -70px;
+}
+/* .delivery{
+  position: relative;
+  bottom: 50%;
+  right: 50%;
+} */
+
+.servises li{
+  font-size: 13px;
+}
