@@ -1,0 +1,36 @@
+
+
+body{
+   /* 3colors in same background.. */
+   padding: 10px;
+  font-family: sans-serif;
+    background:gray;
+    color: white;
+  font-family: 'Playfair Display', serif;
+
+
+
+}
+p{
+  font-size: 1.9vw;
+}
+
+.top{
+  box-shadow: 0 2px 3px 6px black;
+  padding: 10px;
+}
+
+.menu{
+  text-align: center;
+text-transform:inherit;
+}
+
+.saladImg{
+  border-radius: 3px;
+  border: 6px solid white;
+  margin: 1em auto;
+  transform: rotateZ(-3deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+  opacity   .4s .25s ease-out;
+
+}

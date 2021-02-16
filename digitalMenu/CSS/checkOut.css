@@ -1,0 +1,20 @@
+
+body{
+    background-image:url('https://www.visitnicaragua.us/wp-content/uploads/2018/03/Destinos-con-Mucho-Sabor-Masaya-24-sin-marca.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background:rgb(153, 133, 107);
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px  4px black;
+    color: white;
+}
+
+
+
+input[type="number"] {
+    width: 50px;
+}
