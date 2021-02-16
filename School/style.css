@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  padding: 0px;
+  background: gray;
+  color: white;
+}
+
+
+.logo {
+  font-size: 50px;
+  font-family: fantasy;
+  text-shadow: 0 2px 2px white;
+
+}
+
+/* animation text */
+.hours{
+
+  font-size: 30px;
+
+  animation: anime 8s forwards infinite ease-in  ;
+}
+
+@keyframes anime {
+  0%{transform: translateX(-300px) ; opacity: 0;}
+
+  100%{transform: translateX(1300px);}
+
+}
+
+
+.founder{
+
+  border-radius: 20%;
+  box-shadow: 0 2px 3px black;
+}
+
+.events img{
+  width: 100%;
+  /* transform: rotate(-3deg); */
+  border: 3px solid white;
+}
+.infos img{
+  width: 100%;
+  /* transform: rotate(3deg); */
+
+    border: 3px solid white;
+}
+.Classes img{
+  width: 100%;
+  /* transform: rotate(3deg); */
+
+    border: 3px solid white;
+}
+.Offers img{
+  width: 100%;
+  /* transform: rotate(-3deg) translateY(-10px) ; */
+
+    border: 3px solid white;
+}
+
+
+
+.jumbotron{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.bg-video_content{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+.bg-video{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.text{
+  position: absolute;
+  bottom:50%;
+  left: 50%;
+  transform: translate(-20%,50%);
+  color: white;
+  font-size: 50px;
+  width: 100%;
+
+  text-shadow: 2px 4px 3px black;
+  animation: text 6s infinite linear alternate;
+  transition: all 2s;
+
+
+}
+
+@keyframes text {
+  0% {
+    opacity: .4;
+  }
+  100%{
+    opacity: 1;
+    color: red;
+  transform: scale(1.6) ;
+
+  }
+
+}
