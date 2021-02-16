@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <style>
+        input[type="number"] {
+            width: 50px;
+        }
+       
+        .container{
+            background: lightgray;
+            width: 60%;
+            margin-top: 30px;
+            box-shadow: 2px 3px 3px blue;
+            transition: all .5s;
+        }
+        .container:hover{
+            background: purple;
+            color: white;
+        }
+    
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5 " >
+        <h1 class="text-primary">Shopping Checkout</h1>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="upload" value="1">
+            <input type="hidden" name="business" value="seller@dezignerfotos.com">
+            <table class="table table-hover">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>Qty</th>
+                        <th>Item Name</th>
+                        <th>Cost</th>
+                        <th class="text-xs-right">Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="output"> </tbody>
+               
+            </table>
+
+          <!-- <input type="submit" class="btn btn-primary btn-block"value="Checkout with PayPal"> -->
+         
+
+          <a href="shopStyle1.html"class="btn btn-success">Continue Shopping</a>
+
+          <p class="text-center">Call us in 349-345-334 for your Order </p>
+
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- code here -->
+    <script>
+        var shopcart = [];
+$(document).ready(function () {
+    outputCart();
+    $('#output').on('change', '.dynqua', function () {
+        var iteminfo = $(this.dataset)[0];
+        var itemincart = false;
+        var removeItem = false;
+        var removeIndex = 0;
+        var qty = $(this).val();
+        if (qty <= 0) {
+            qty = 0;
+            $(this).val(0);
+        }
+        $.each(shopcart, function (index, value) {
+            if (value.id == iteminfo.id) {
+                if (qty <= 0) {
+                    removeItem = true;
+                    removeIndex = index;
+                }
+                else {
+                    shopcart[index].qty = qty;
+                    itemincart = true;
+                }
+            }
+        })
+        if (removeItem) {
+            shopcart.splice(removeIndex, 1);
+        }
+        sessionStorage["sca"] = JSON.stringify(shopcart);
+        outputCart();
+    })
+
+    function outputCart() {
+        if (sessionStorage["sca"] != null) {
+            shopcart = JSON.parse(sessionStorage["sca"].toString());
+        }
+        console.log(sessionStorage["sca"]);
+        console.log(shopcart);
+        var holderHTML = '';
+        var total = 0;
+        var itemCnt = 0;
+        $.each(shopcart, function (index, value) {
+            var stotal = value.qty * value.price;
+            var a = (index + 1);
+            total += stotal;
+            itemCnt += parseInt(value.qty);
+            holderHTML += '<tr><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + value.name + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td><td><span class="remove-item btn btn-danger">x</span></td></tr>';
+        })
+        holderHTML += '<tr><td colspan="3" class="text-xs-right">Total</td><td class="text-xs-right">$' + formatMoney(total) + '</td></tr>';
+        $('#output').html(holderHTML);
+    }
+    $('#output').on('click', '.remove-item', function () {
+        var itemInfo = $(this.dataset)[0];
+        var itemToDelete = $('.remove-item').index(this);
+        shopcart.splice(itemToDelete, 1);
+        sessionStorage["sca"] = JSON.stringify(shopcart);
+        outputCart();
+    })
+
+    function formatMoney(n) {
+        return (n / 100).toFixed(2);
+    }
+})
+    </script>
+</body>
+
+</html>

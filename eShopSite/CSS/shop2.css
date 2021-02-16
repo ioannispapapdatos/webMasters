@@ -1,0 +1,53 @@
+body{
+
+    background: rgb(1, 82, 107);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    
+    }
+    .container{
+        width: 90%;
+        background:white;
+        padding: 4px;
+        border-radius: 4px;
+    }
+    
+    .card{
+      border: 3px solid black;
+      box-shadow: 1px 1px 2px black;
+      border-radius: 5px;
+      
+    }
+
+    .boxes{
+      border: 3px solid black;
+      border-radius: 5px;
+      padding: 2px;
+    }
+    header{
+        width: 50%;
+       
+       
+    }
+    .htop{
+        border-radius: 10px;
+    }
+    .offer{
+        text-decoration: line-through;
+    }
+    
+    .msg{
+      color: rgb(235, 231, 234);
+      text-shadow: 2px 2px 1px black;
+      font-weight: 300;
+      font-size: 22px;
+      font-family: sans-serif;
+      animation: move 10s infinite linear forwards;
+    }
+    @keyframes move{
+      0%{transform: translateX(-400px);}
+      100%{transform: translateX(1400px);}
+    }
+    

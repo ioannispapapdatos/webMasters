@@ -1,0 +1,22 @@
+body{
+
+  background: black;
+  color: white;
+
+
+}
+
+
+
+i{
+  color: lightblue;
+}
+
+.productImg{
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.productImg{
+  box-shadow: 2px 3px 6px black;
+}

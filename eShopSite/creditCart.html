@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Visa Option</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="">
+
+</head>
+
+
+
+<body>
+
+    <nav class="navbar   bg-warning">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+
+
+    		</div>
+
+    </nav>
+
+    <hr>
+      <div class="container bg-light" style="width:70%;">
+
+        <form class="form-group " action="index.html" method="post">
+        <div class="row shadow-lg">
+
+          <div class="col-6">
+
+              <label  class="fa fa-user"></i> Full Name</label> <br>
+              <input class="form-control" type="text" name="firstname" placeholder="John M. Doe">
+              <label ><i class="fa fa-envelope"></i> Email</label>
+              <input  class="form-control" type="text"  name="email" placeholder="john@example.com">
+
+              <label  ><i class="fas fa-map-marker-alt"></i>  Address</label>
+              <input  class="form-control" type="text" name="address" placeholder="542 W. 15th Street">
+
+              <label  <i class="fas fa-city"></i>  City</label>
+              <input  class="form-control" type="text"  name="city" placeholder="Athens">
+
+              <label  <i class="fas fa-city"></i>  Country</label>
+              <input  class="form-control" type="text" name="state" placeholder="AT">
+              <label >Zip</label>
+              <input  class="form-control" type="text"  name="zip" placeholder="10001">
+
+
+          </div>
+
+          <div class=" col-6">
+              <label for="cname">Name on Card</label>
+              <input  class="form-control" type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input  class="form-control" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input  class="form-control" type="text" id="expmonth" name="expmonth" placeholder="September">
+
+              <div class="row">
+                <div class="col-6">
+                  <label for="state">Greece</label>
+                  <input class="form-control" type="text" id="state" name="state" placeholder="AT">
+                </div>
+                <div class="col-6">
+                  <label for="zip">Zip</label>
+                  <input  class="form-control" type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <label for="expyear">Exp Year</label>
+                  <input  class="form-control" type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-6">
+                  <label for="cvv">CVV</label>
+                  <input  class="form-control"  type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+
+              <div class="">
+                <h5 class="text-center">Accepted Cards</h5>
+                <hr>
+
+            <img src="https://www.lebanonfcu.org/wp-content/uploads/2016/12/visa-logo.png" width="90px;" height="35px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/MasterCard_early_1990s_logo.svg/1280px-MasterCard_early_1990s_logo.svg.png"
+            width="90px;" height="50px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/800px-PayPal_logo.svg.png" width="100px;" height="35px;">
+
+              </div>
+              <hr>
+
+            </div>
+
+        </div>
+
+         </form>
+
+      </div>
+
+      <hr>
+      <!-- main body -->
+
+
+      <hr>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- code here -->
+    <script>
+        var shopcart = [];
+$(document).ready(function () {
+    outputCart();
+    $('#output').on('change', '.dynqua', function () {
+        var iteminfo = $(this.dataset)[0];
+        var itemincart = false;
+        var removeItem = false;
+        var removeIndex = 0;
+        var qty = $(this).val();
+        if (qty <= 0) {
+            qty = 0;
+            $(this).val(0);
+        }
+        $.each(shopcart, function (index, value) {
+            if (value.id == iteminfo.id) {
+                if (qty <= 0) {
+                    removeItem = true;
+                    removeIndex = index;
+                }
+                else {
+                    shopcart[index].qty = qty;
+                    itemincart = true;
+                }
+            }
+        })
+        if (removeItem) {
+            shopcart.splice(removeIndex, 1);
+        }
+        sessionStorage["sca"] = JSON.stringify(shopcart);
+        outputCart();
+    })
+
+    function outputCart() {
+        if (sessionStorage["sca"] != null) {
+            shopcart = JSON.parse(sessionStorage["sca"].toString());
+        }
+        console.log(sessionStorage["sca"]);
+        console.log(shopcart);
+        var holderHTML = '';
+        var total = 0;
+        var itemCnt = 0;
+        $.each(shopcart, function (index, value) {
+            var stotal = value.qty * value.price;
+            var a = (index + 1);
+            total += stotal;
+            itemCnt += parseInt(value.qty);
+            holderHTML += '<tr><td><input size="5"  type="number" class="dynqua" name="quantity_' + a + '" value="' + value.qty + '" data-id="' + value.id + '"></td><td><input type="hidden" name="item_name_' + a + '" value="' + value.name + ' ' + value.s + '">' + value.name + '(' + value.s + ')</td><td><input type="hidden" name="amount_' + a + '" value="' + formatMoney(value.price) + '"> $' + formatMoney(value.price) + ' </td><td class="text-xs-right"> ' + formatMoney(stotal) + '</td><td><span class="remove-item btn btn-danger">x</span></td></tr>';
+        })
+        holderHTML += '<tr><td colspan="3" class="text-xs-right">Total</td><td class="text-xs-right">$' + formatMoney(total) + '</td></tr>';
+        $('#output').html(holderHTML);
+    }
+    $('#output').on('click', '.remove-item', function () {
+        var itemInfo = $(this.dataset)[0];
+        var itemToDelete = $('.remove-item').index(this);
+        shopcart.splice(itemToDelete, 1);
+        sessionStorage["sca"] = JSON.stringify(shopcart);
+        outputCart();
+    })
+
+    function formatMoney(n) {
+        return (n / 100).toFixed(2);
+    }
+})
+    </script>
+</body>
+
+</html>

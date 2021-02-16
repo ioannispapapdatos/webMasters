@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/zoom.css">
+
+
+</head>
+<body>
+
+<h1>Image Zoom</h1>
+
+<p>Mouse over the image:</p>
+
+<div class="img-zoom-container">
+  <img id="myimage" 
+  src="https://thetrendler.com/wp-content/uploads/2016/08/10tb-dogsperm01-superJumbo.jpg"
+   width="300" height="240">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+
+<p>The image must be placed inside a container with relative positioning.</p>
+<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
+<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p>
+
+
+<script src="script/zoom.js"></script>
+
+</body>
+</html>

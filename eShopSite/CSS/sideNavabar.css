@@ -1,0 +1,77 @@
+
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(94, 19, 19);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin-left:0;
+
+}
+
+.navlogo{
+  margin-left: 45px ;
+  border-bottom: 2px solid white;
+  border-bottom-style: double;
+
+  margin-bottom: 10px;
+  transition: all .5s;
+}
+.navlogo:hover{
+
+
+}
+
+
+.sidenav a {
+  padding: 4px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  display: block;
+  transition: 0.6s;
+
+}
+.navSpan{
+  /* position: absolute;
+  top: 120px;
+  left: 30px; */
+}
+
+
+.sidenav a:hover {
+  color: orangered;
+  text-decoration: underline;
+
+
+}
+.menu{
+  margin-left: 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* overlay navbar */
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
