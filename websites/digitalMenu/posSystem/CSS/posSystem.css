@@ -1,0 +1,13 @@
+body{
+    background:gray;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}

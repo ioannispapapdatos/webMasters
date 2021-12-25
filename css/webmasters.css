@@ -1,0 +1,36 @@
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+background-image: url('https://images.unsplash.com/photo-1566748861844-478bcee7137f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+background-position: center;
+
+background-repeat: no-repeat;
+color: white;
+font-family: 'Merriweather', serif;
+
+}
+
+h3,h4,h5{
+	  text-shadow: 2px 2px 2px purple;
+		font-family:fantasy;
+		color: white;
+}
+ i{
+
+	color: white;
+}
+.contacts{
+  background-color: rgba(200, 200, 100, 0.6);
+  box-shadow: 2px 2px black;
+  padding: 20px;
+  transition: all .4s;
+  border-radius: 20px;
+}

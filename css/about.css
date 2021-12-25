@@ -1,0 +1,24 @@
+
+
+body{
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: white;
+font-family: 'Merriweather', serif;
+
+}
+
+
+.bioImage{
+	border-radius: 50%;
+	width: 230px;
+	box-shadow: 3px 2px 2px  3px rgb(226, 223, 223) ;
+	
+}
+.main{
+   
+	box-shadow: 2px 4px 4px white;
+	
+}

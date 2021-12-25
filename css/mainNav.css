@@ -1,0 +1,11 @@
+.nav-link{
+    font-size: 14px;
+    /* transition: all 3s; */
+    
+}
+.nav-link:hover{
+  
+    text-decoration:underline;
+ 
+    
+}

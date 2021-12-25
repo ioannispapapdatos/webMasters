@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: lightgray; */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(106, 113, 111, 0.4),
+      rgba(10, 100, 131, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1566748861844-478bcee7137f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+h3,
+h4,
+h5 {
+  text-shadow: 1px 2px 5px red;
+  font-family: fantasy;
+  color: white;
+  transform: rotate(-2deg);
+}
+/*  */
+/* images hover effect */
+.sites {
+  border-radius: 3px;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.resto {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.resto:hover {
+  transform: scale(1.1);
+}
+
+/* hover navbar */
+
+.fab {
+  color: whte;
+}
+
+*/
+
+/* dropdown button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 600px;
+  padding: 4px;
+  box-shadow: 3px 2px 3px 3px black;
+  z-index: 1;
+  color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* hover button stop here */
+
+.lang a {
+  align-items: center;
+
+  margin: 3px;
+  color: red;
+}
+
+.backButton {
+  float: right;
+}
+
+
+/* text Promo animation */
+.titlePromo {
+  /* position: relative; */
+  opacity: 0;
+  color: white;
+  text-shadow: 1px 2px 5px red;
+  animation: title 3.2s 2 forwards 1s;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1.2) translateX(30px); */
+  }
+}
+/* Price Animation */
+
+.titlePrice {
+  font-size: 13px;
+  text-shadow: 1px 2px 5px red;
+
+  color: white;
+  opacity: 0;
+  /* transform-origin: left; */
+  animation: title1 3s 2 forwards 1.7s;
+}
+
+@keyframes title1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(30px, 2px) scale(1.2);
+  }
+}
+
+/*  */
+.btn {
+  box-shadow: 1xp 2px 2px wheat;
+}

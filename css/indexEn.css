@@ -1,0 +1,279 @@
+
+body{
+
+color: white;
+  font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 2px;
+  background: black;
+  position: relative;
+
+}
+
+.header{
+  padding:10px;
+  margin: 20px;
+  
+  margin:0;
+  height: 100%;
+
+  height: 100vh;
+  background-image:
+  url("https://images.unsplash.com/photo-1571677246347-5040036b95cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  /* we creat cat screen in background */
+ 
+  background-position:center;
+  background-size: cover;
+  /* position: relative; */
+
+}
+.header{
+
+   background-color: rgba(26, 20, 20, 0.8);
+}
+.message{
+  position: absolute;
+ 
+  top: 10px;
+  left: 10px;
+  line-height: 20px;
+
+}
+#time{
+
+font-size: 2rem;
+color: orangered;
+width: 200px;
+
+
+}
+#greeting{
+  color: lightgray;
+
+
+}
+footer{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  line-height: 20px;
+}
+
+/* logo png here */
+.logo{
+
+   margin-top: 40px;
+
+}
+
+.lang{
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+a{
+  color:white;
+  transition: all 1s;
+  margin-left: 4px;
+}
+a:hover{
+  color: red;
+
+}
+
+
+
+/* this box has the text h1 */
+.text-box{
+
+  position: absolute;
+  width: 100%;
+  top:40%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+
+  text-align: center;
+
+}
+
+.heading-primary{
+  color: white;
+
+  backface-visibility: hidden;
+  margin-bottom: 40px;
+
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 25px;
+
+  letter-spacing: 2px;
+
+  animation-name: moveinLeft;
+  animation-duration: 2s;
+
+   animation-timing-function: ease-in-out;
+
+
+}
+.heading-primary-sub{
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing:2px;
+  margin-top: 3px;
+
+  animation: moveinRight 2s ease-out;
+
+}
+.heading-primary-sub1{
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing:5px;
+    margin-top: 3px;
+
+  animation: moveinRight 2s ease-out;
+
+}
+
+
+.btn:link,
+.btn:visited{
+   text-transform: uppercase;
+  text-decoration: none;
+  /* speacial for padding */
+  padding: 14px 30px;
+  display: inline-block;
+  border-radius: 30px;
+  /* make happent correctly */
+  transition: all .4s;
+  /* this is connect with position in sudo button */
+  position: relative;
+
+
+}
+.btn-white{
+  background-color:green;
+  color: white;
+}
+/* translate move staff up down left and right */
+.btn:hover{
+
+  transform:translateY(-3px);
+  /* box shadow when hovers */
+  box-shadow: 0 10px 10px gray;
+}
+.btn:active{
+  transform: translateY(-1px);
+    box-shadow: 0 5px 10px white;
+
+}
+/* sudo element */
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  /* connect with button box */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* position if element is one top to the other */
+  z-index: -1;
+  transition: all .4s;
+
+}
+.btn-white:after{
+background-color: red;
+
+}
+
+.btn:hover::after{
+  /* scall make the element bigger of dmsller */
+  /* double side here  in X direction*/
+  /* and in Y direction */
+  transform: scaleX(1.4)scaleY(1.3)  ;
+  /* wowoo */
+  opacity: 0;
+
+
+}
+.btn-animated{
+  /* the last one is animation delay */
+
+  animation: moveinBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+
+.button {
+  padding: 12px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color:gray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px 3px 2px tomato;
+align-self: center;
+
+}
+
+.button:hover {background-color:black;}
+
+.button:active {
+  background-color: pink;
+  box-shadow: 0 5px black;
+  transform: translateY(10px);
+}
+
+/* other animation */
+
+
+.animate-pop-in{
+  animation:pop-in 3s cubic-bezier(0,.72,.72,.92) forwards;
+  opacity: 0;
+  transform: translateY(-6rem) scale(.8);
+}
+/* this keyframe we bring to different classes becouse is same evrywhere... */
+@keyframes pop-in {
+  0%{
+    opacity: 0;
+    transform: translateY(-4rem) scale(.5);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* we animate the class different time */
+.heading-primary-main{
+  animation-delay: .5s;
+}
+
+.heading-primary-sub{
+    animation-delay: .7s;
+}
+.heading-primary-sub1{
+    animation-delay: .9s;
+}
+.btn-animated{
+    animation-delay: 1.2s;
+
+}
+
+/* footer section */
+
+

@@ -1,0 +1,93 @@
+
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80");
+   background-position:center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+section{
+  position: relative;
+
+  background-color: rgba(34, 17, 17, 0.5);
+  padding: 20px;
+  position: relative;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  text-align:center;
+  border-radius: 5px;
+  border: 2px solid wheat;
+  
+  color: white;
+  font-weight: 300;
+}
+.myProfileImage{
+
+  border-radius: 40%;
+  position: absolute;
+  /* opacity: .6; */
+  top: 50px;
+  left: 0;
+
+}
+/* my image animation */
+.myProfile{
+    opacity: 0;
+    transition: all 1s;
+    animation: move 4s  infinite alternate;
+}
+@keyframes move{
+    0%{
+     opacity: 0;
+    }
+    100%{
+    /* transform: scale(1.1); */
+    opacity: 1;
+    }
+}
+/* ... */
+
+
+.backButton{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: red;
+  font-size: 20px;
+}
+
+
+.title{
+  font-family: fantasy;
+  text-shadow: 1px 2px 1px red;
+}
+
+.contacts{
+
+
+  /* line-height: 6px; */
+}
+
+
+
+@media (max-width:700px ) {
+
+  p{
+    font-size: 12px;
+
+  }
+  h3,h4,h2{
+    font-size: 18px;
+
+  }
+
+}
+.footer{
+  line-height: 1px;
+}

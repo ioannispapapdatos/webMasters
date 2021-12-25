@@ -1,0 +1,194 @@
+body{
+  background:lightgray;
+  padding: 0;
+  margin: 0;
+font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+/* .jobTitle{
+  position: relative;
+} */
+.progress{
+  width: 50%;
+  height: 5px;
+}
+.designer{
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+
+.contacts{
+  /* background: purple; */
+
+  padding:4px ;
+  color: red;
+  width: 400px;
+  animation: move 13s forwards infinite linear  ;
+
+
+}
+
+@keyframes move {
+  0%{ transform: translateX(-500px);}
+  50%{ transform: translateX(500px)  ;}
+  100%{ transform: translateX(1200px);}
+
+
+}
+
+.container{
+  width: 70%;
+
+  border-radius: 4px;
+
+}
+
+/* button diploma html here */
+.certificates{
+  border-radius: 6px;
+  padding: 2px 2px;
+
+ animation: anime 1s forwards  infinite ease-in alternate ;
+
+}
+@keyframes anime {
+  0%{
+    opacity: 0;
+    /* transform:  translateX(10px); */
+   }
+  50%{
+     opacity: .4;
+     background: red;
+   }
+  100%{
+     opacity: 1;
+     background: blue; }
+}
+/* animation ends */
+
+
+.body{
+ background-image: url("https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80");
+  background-position:top;
+  background-size: cover;
+  padding: 2px;
+  width: 100%;
+  color: white;
+
+}
+
+.period{
+  padding: 6rem;
+  padding-left: 6rem;
+  background-color:rgba(16, 53, 235,.3);
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 3rem black;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-align:left;
+
+
+
+/* .. */
+}
+
+
+
+
+.periodA{
+
+  font-size: 1.2rem;
+  padding: 2rem;
+  border-radius: 3px;
+  /* background-image: linear-gradient(to right.rgba(120, 213, 111, 0.3)); */
+  box-shadow:0 4px 4px black;
+  display: inline-block;
+
+ transition: transform .4s;
+
+
+}
+/*
+.period:hover{
+
+  transform: translateY(1rem) scale(1.03);
+
+} */
+.extra{
+  width: 70%;
+  margin: 10px;
+  background: white;
+
+opacity: 0.8;
+  font-size: 1rem;
+  padding: 2rem;
+  border-radius: 3px;
+  background-image: linear-gradient(to right rgba(20, 213, 211, 0.6));
+  box-shadow:0 4px 4px red;
+  display: inline-block;
+
+  -webkit-background-clip:text;
+  color:transparent;
+
+transition: transform .6s;
+
+}
+
+i{
+  font-size:1.2rem;
+}
+.jumbotron{
+  position: relative;
+}
+
+
+.profileImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  border-radius: 3%;
+  border: 5px solid white;
+   width: 120px;
+   transform: rotate(-4deg);
+
+  margin-left: 20px;
+
+
+}
+
+.back-button{
+  position: absolute;
+  bottom:  0;
+  left: 10px;
+   transform: translate(-50%,-50%);
+}
+
+
+.social{
+  position: absolute;
+  bottom:-10%;
+  right: 10%;
+}
+.social1{
+  position: absolute;
+  bottom:0;
+  right: 10%;
+}
+
+.logos{
+  margin: 3px;
+  text-align: center;
+}
+
+.certificate{
+  border: 2px solid red;
+  transition: all .5s;
+  border-radius: 10px;
+}

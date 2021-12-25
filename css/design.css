@@ -1,0 +1,77 @@
+
+body{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+color: white;
+font-family: 'Merriweather', serif;
+
+}
+
+@media (min-width: 780px) {
+  .title{font-size: 24px; }
+
+}
+
+
+
+em{
+  text-shadow: 2px 2px red;
+  text-shadow: 2px yellow;
+}
+.images{
+  line-height: 3px;
+}
+.bioImg{
+  border-radius: 5px;
+  border: 2px solid white;
+  margin: 11px;
+}
+
+.cardInfos{
+  line-height: 24px;
+}
+
+/* animation */
+.card2{
+  border: 4px solid white;
+
+}
+.title{
+  opacity: 0;
+  animation: move 4s infinite ease-in alternate;
+  padding: 4px;
+}
+
+@keyframes move {
+  0%{ opacity: 0;}
+  20%,100%{
+    opacity: 1;
+    color: orange;
+
+    /* font-size: 14px; */
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .title ,.scan ,h3,h4{
+    font-size: 13px;
+
+  }
+}
+/* scan text animation */
+.scan{
+  color: orange;
+  animation: scanMove .5s infinite alternate ;
+
+}
+@keyframes scanMove {
+  0%{transform: none;}
+  100%{transform: translateX(-20px);}
+
+}
+
+

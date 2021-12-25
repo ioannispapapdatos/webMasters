@@ -1,0 +1,39 @@
+/* body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfe6e9;
+
+
+} */
+
+.social {
+  font-size: 40px;
+  color: tomato;
+  transition: 0.5s;
+}
+.social:hover {
+  transform: scale(1.1);
+}
+
+#container {
+  text-align: center;
+  display: flex;
+}
+/*  */
+
+@keyframes animation {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 15%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}

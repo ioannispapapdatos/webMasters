@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3colors in same background.. */
+
+  background-image: linear-gradient(70deg, olive 10%, lightblue 80%, olive 10%);
+  font-family: "Playfair Display", serif;
+
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+}
+a {
+  color: aliceblue;
+  font-size: 15px;
+}
+
+.section1 {
+  background-color: rgb(29, 28, 20, 0.7);
+  padding: 10px;
+
+  color: white;
+  border-radius: 5%;
+}
+
+.menuImage img {
+  transition: all 0.5s;
+
+  width: 100%;
+}
+.menuImage img:hover {
+  transform: scale(1.01);
+  opacity: 1s;
+}
+
+header {
+  position: absolute;
+  font-size: 12px;
+  padding: 2px;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  float: right;
+  width: 140px;
+}
