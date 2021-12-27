@@ -1,85 +1,78 @@
+body {
+  background: rgb(99, 14, 121);
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  color: white;
+  font-family: "Playfair Display", serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  color: white;
+}
 
-body{
-  
-/* background: lightgray; */
-background-image:linear-gradient(to right bottom,rgba(136, 213, 211, 0.45),rgba(10,100,231,0.5)),
- url("https://images.unsplash.com/photo-1566748861844-478bcee7137f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+.video {
+  box-shadow: 2px 3px 4px rgb(252, 250, 250);
+  border-radius: 10px;
+}
 
-	 background-position: center;
-	 background-size: cover;
-	 background-repeat: no-repeat;
-	
-	 color:white;
-   font-family: 'Playfair Display', serif;
-   padding: 0;
-   margin: 0;
+.servises {
+  padding: 10px;
 
- }
- .container{
-   color: white;
- }
+  margin-left: 10px;
+}
 
-  .video{
-    box-shadow: 2px 3px 4px rgb(252, 250, 250);
-    border-radius: 10px;
- } 
+.webLogo img {
+  border-radius: 4px;
+  border: 3px solid white;
 
- .servises{
+  box-shadow: 2px 2px 7px black;
+}
 
-   padding:  10px;
-
-   margin-left: 10px;
- }
-
-
- .webLogo img {
- 
-   border-radius: 4px;
-   border: 3px solid white;
-  
-   box-shadow: 2px 2px 7px black;
- }
-
-
-
-.contacts{
- color: white;
-animation: anime 9s forwards infinite linear alternate ;
+.contacts {
+  color: white;
+  animation: anime 9s forwards infinite linear alternate;
 }
 @keyframes anime {
-0%{opacity: 1; color: blue; }
-  50% {opacity: 0;}
-  100% {opacity: 1; }
-
+  0% {
+    opacity: 1;
+    color: blue;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.newsLetter{
+.newsLetter {
   box-shadow: 2px 3px 2px black;
   border-radius: 10px;
 }
 
-
 /* offer button */
 
-.info{
+.info {
   /* padding: 10px; */
   animation: btnMove 4s infinite linear;
 }
 
-@keyframes btnMove{
-  0%{ 
+@keyframes btnMove {
+  0% {
     opacity: 1;
-    }
-  50%{
-     opacity: 1;
-     transform: scale(1.1) translateX(20px);
-     border-radius: 20px;
-     background-color: blue;
-    }
-  100%{ 
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateX(20px);
+    border-radius: 20px;
+    background-color: blue;
+  }
+  100% {
     transform: scale(1);
     background-color: chocolate;
-    }
+  }
 }

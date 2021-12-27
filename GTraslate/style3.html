@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html">Style1</a>
+
+    <h1>Welcome</h1>
+    <hr />
+    <!-- GTranslate: https://gtranslate.io/ -->
+    <select onchange="doGTranslate(this);">
+      <option value="">Select Language</option>
+
+      <option value="en|ar">Arabic</option>
+
+      <option value="en|nl">Dutch</option>
+      <option value="en|en">English</option>
+      <option value="en|et">Estonian</option>
+
+      <option value="en|fi">Finnish</option>
+      <option value="en|fr">French</option>
+
+      <option value="en|de">German</option>
+      <option value="en|el">Greek</option>
+
+      <option value="en|ru">Russian</option>
+    </select>
+    <div id="google_translate_element2"></div>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"
+    ></script>
+
+    <script src="translate.js"></script>
+  </body>
+</html>
