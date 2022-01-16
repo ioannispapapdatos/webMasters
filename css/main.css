@@ -76,3 +76,14 @@ body {
     background-color: chocolate;
   }
 }
+
+/* webdelivery site */
+
+.logoArea {
+  position: relative;
+}
+.bubble {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
