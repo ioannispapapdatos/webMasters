@@ -1,0 +1,128 @@
+body {
+  background: lightgray;
+  padding: 0;
+  margin: 0;
+
+  font-family: serif;
+}
+.jobTitle {
+  position: relative;
+}
+.designer {
+  position: absolute;
+  width: 70%;
+  top: 30%;
+  left: 25%;
+}
+
+.container {
+  /* width: 70%; */
+
+  border-radius: 10px;
+}
+
+.image img {
+  border-radius: 50%;
+  width: 160px;
+  height: 220px;
+  box-shadow: 0 2px 3px 2px gray;
+  /* height: 100%; */
+  transform: scale(1);
+  backface-visibility: hidden;
+}
+.body {
+  background-image: url("https://images.unsplash.com/photo-1510873897477-7d8724050d64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  background-position: top;
+  background-size: cover;
+  padding: 2px;
+  width: 100%;
+  color: white;
+
+  background-repeat: no-repeat;
+}
+
+.period {
+  padding: 6rem;
+  padding-left: 6rem;
+  background-color: rgba(80, 119, 919, 0.2);
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 3rem black;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  text-align: left;
+
+  /* .. */
+}
+
+i {
+  font-size: 1.2rem;
+}
+/* p{
+  font-size: 1.7vw;
+} */
+
+.image1 img {
+  /* position: absolute; */
+  border-radius: 50%;
+  width: 250px;
+  height: 200px;
+  box-shadow: 0 2px 3px 2px black;
+}
+.profileImg {
+  border-radius: 12px;
+  border: 10px solid white;
+  width: 150px;
+  margin-left: 30px;
+  transform: translateY(1em) rotateZ(-4deg);
+}
+
+.jumbotron {
+  position: relative;
+  background: black;
+  padding: 3px;
+}
+.back-button {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+.social {
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+}
+.social1 {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.message {
+  /* background-image:with multi colors */
+
+  background-image: linear-gradient(130deg, red 10%, lightblue 50%, gray 40%);
+  box-shadow: 0 3px 10px black;
+
+  color: white;
+}
+
+.logos {
+  margin: 3px;
+  text-align: center;
+}
+
+.copyrights a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: monospace;
+  text-shadow: 2px 2px 1px black;
+  font-size: 18px;
+  transition: transform 1s;
+}
+
+.copyrights a:hover {
+  color: red;
+  transform: rotateX(10deg);
+}

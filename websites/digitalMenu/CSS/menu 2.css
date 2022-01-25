@@ -1,0 +1,117 @@
+
+
+body {
+  background: rgb(30, 8, 32);
+  color: antiquewhite;
+  position: relative;
+  font-family: inherit;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+a {
+  color: yellowgreen;
+}
+
+section {
+   background: linear-gradient(to bottom, #210d2b 20%, #3108e7 47%);
+  box-shadow: 2px 3px 2px black;
+
+  text-decoration: 1px 2px 1px red;
+  color: whitesmoke;
+  background-color: rgb(128, 107, 15);
+  margin: 10px auto;
+  width: 100%;
+  /* line-height: 14px; */
+}
+
+section p {
+  font-size: 14px;
+}
+
+.food-images {
+  border-radius: 5px;
+  border: 4px solid white;
+}
+
+
+header {
+  /* position: absolute; */
+  padding: 0px;
+  margin: 0;
+  /* top: 10%;
+  left: 4px; */
+  border-radius: 10px;
+ 
+  width: 30%;
+  font-size: 15px;
+  /* overflow: scroll; */
+  /* animation: move; */
+}
+
+
+.menuBody {
+  border: 4px solid white;
+
+  background-color: rgba(110, 225, 122, 0.5);
+}
+
+
+.menuImages{
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgb(209, 201, 201);
+  width: 100%;
+}
+/*  */
+
+.menuBodyA{
+  background-image: url('https://images.unsplash.com/photo-1511910849309-0dffb8785146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ////// */
+/* we costomize the menu boxe */
+
+.starters{
+  background: rgba(129, 7, 113, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.sandwich{
+  background: rgba(20, 155, 53, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.dessert{
+  background: rgba(218, 179, 7, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.burgers{
+  background: rgba(75, 6, 165, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.grill{
+  background: rgba(95, 15, 5, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.salad{
+  background: rgba(89, 104, 6, 0.8);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 2px black;
+}
+.title{
+   background: rgba(8, 119, 36, 0.4);
+  
+  
+}
+/* //////// */
+
+
+

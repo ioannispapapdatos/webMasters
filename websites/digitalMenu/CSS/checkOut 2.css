@@ -1,0 +1,25 @@
+body {
+  background-color: blueviolet;
+}
+
+.container {
+  background: rgb(99, 5, 20);
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px 4px black;
+  color: white;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+/* .call {
+  position: absolute;
+  padding: 20px;
+  width: 200px;
+  bottom: 20%;
+  right: 30%;
+  background-color: orange;
+  align-self: center;
+  border-radius: 20%;
+  border: 2px solid red;
+} */

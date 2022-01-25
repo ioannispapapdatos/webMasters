@@ -1,0 +1,25 @@
+body{
+    background-color:rebeccapurple;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container{
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    width: 60%;
+    padding: 10px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: 1px;
+    font-size: 13px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px black;
+}

@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: sans-serif;
+  background: gray;
+  color: white;
+  font-family: "Playfair Display", serif;
+  line-height: 20px;
+  letter-spacing: unset;
+}
+
+.main {
+  width: 100%;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    210deg,
+    rgb(94, 14, 131) 10%,
+    black 60%,
+    olive 30%
+  );
+
+  padding: 15px;
+   box-shadow: 2px 2px 3px 2px black;
+  border-radius: 10px;
+  width: 70%;
+}
+a {
+  text-replace: all 1s;
+  color: yellow;
+}
+a:hover {
+  color: red;
+}
+.starters {
+  line-height: 17px;
+}
+
+/* modal */
