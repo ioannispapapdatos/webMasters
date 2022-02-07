@@ -87,3 +87,21 @@ body {
   top: 40px;
   left: 50px;
 }
+
+/* promo animation */
+
+/* .promoA img {
+  animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+  0%,
+  50% {
+    background-image: url("/img/yourNutriGuide\ 2.png");
+  }
+
+  50%,
+  100% {
+    background-image: url("/img/infinitylogoV1\ 2.png");
+  }
+} */
