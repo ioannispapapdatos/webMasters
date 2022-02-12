@@ -10,7 +10,7 @@ body {
 section {
   position: relative;
 
-  background-color: rgba(34, 17, 17, 0.5);
+  background-color: rgba(46, 35, 46, 0.5);
   padding: 20px;
   position: relative;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -55,30 +55,19 @@ section {
   left: 10px;
   color: red;
   font-size: 20px;
+  transition: all 0.5s;
+  text-decoration: none;
 }
-
-.title {
-  font-family: fantasy;
-  text-shadow: 1px 2px 1px red;
-}
-
-@media (max-width: 700px) {
-  p {
-    font-size: 12px;
-  }
-  h3,
-  h4,
-  h2 {
-    font-size: 18px;
-  }
-}
-.footer {
-  line-height: 1px;
-}
-
-.logos {
-  background-color: rgb(118, 122, 122);
+.backButton:hover {
+  color: rgb(0, 38, 255);
+  font-size: 30px;
+  text-decoration: none;
 }
 
 /* certificate html */
-
+.contacts {
+  transition: all 1s;
+}
+.contacts:hover {
+  color: aquamarine;
+}
