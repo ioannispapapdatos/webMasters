@@ -105,3 +105,44 @@ body {
     background-image: url("/img/infinitylogoV1\ 2.png");
   }
 } */
+
+/* bottom animation */
+.promoArea {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  animation: move 5s infinite alternate;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 3px 10px white;
+}
+/* .promoA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-position: center;
+
+}
+.promoB {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+} */
+
+@keyframes move {
+  0%,
+  60% {
+    background-image: url("../img/promoA.jpg");
+  }
+
+  100% {
+    background-image: url("../img/promoB.jpg");
+  }
+}
