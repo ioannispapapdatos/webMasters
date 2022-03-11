@@ -5,69 +5,32 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-section {
+  color: aliceblue;
   position: relative;
-
-  background-color: rgba(46, 35, 46, 0.5);
-  padding: 20px;
-  position: relative;
-  font-family: Georgia, "Times New Roman", Times, serif;
-
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px solid wheat;
-
-  color: white;
-  font-weight: 300;
 }
-.myProfileImage {
-  border-radius: 40%;
-  position: absolute;
-  /* opacity: .6; */
-  top: 50px;
-  left: 0;
-}
-/* my image animation */
-.myProfile {
-  opacity: 0;
-  transition: all 1s;
-  animation: move 4s infinite alternate;
-}
-@keyframes move {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    /* transform: scale(1.1); */
-    opacity: 1;
-  }
-}
-/* ... */
+/* top */
 
-.backButton {
+.cvImg img {
   position: absolute;
   top: 0;
-  left: 10px;
-  color: red;
-  font-size: 20px;
-  transition: all 0.5s;
-  text-decoration: none;
-}
-.backButton:hover {
-  color: rgb(0, 38, 255);
-  font-size: 30px;
-  text-decoration: none;
+  right: 20px;
+  border-radius: 20px;
 }
 
-/* certificate html */
 .contacts {
-  transition: all 1s;
+  color: antiquewhite;
+  padding: 10px 10px;
+  background-color: rgba(21, 20, 24, 0.5);
+  transition: all 0.4s;
 }
 .contacts:hover {
-  color: aquamarine;
+  transform: scale(1.1);
+}
+.container {
+  background-color: rgba(80, 12, 71, 0.7);
+}
+
+/* parteners logo */
+.parteners img {
+  margin: 2px;
 }
