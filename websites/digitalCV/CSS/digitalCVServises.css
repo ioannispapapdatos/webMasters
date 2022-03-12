@@ -1,50 +1,43 @@
-
-body{
+body {
   padding: 0;
   margin: 0;
   background-image: url("https://images.unsplash.com/photo-1546456674-8aa8c81b9b8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
-   background-size: cover;
-   background-position:top;
-     font-family:  'Big Shoulders Stencil Display', cursive;
-
+  background-size: cover;
+  background-position: top;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-section{
-  background-color: rgba(0, 0, 0,.6);
+section {
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 10px;
 
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  text-align:center;
+  text-align: center;
   border-radius: 5px;
- border: 2px solid whitesmoke;
+  border: 2px solid whitesmoke;
   color: white;
   font-weight: 300;
 }
-.title{
+.title {
   font-family: fantasy;
   text-shadow: 1px 2px 1px red;
 }
 
-
-
-.social i{
+.social i {
   text-decoration: none;
   color: lightyellow;
   margin: 3px;
 }
 
-@media (max-width:700px ) {
-
-  p{
+@media (max-width: 700px) {
+  p {
     font-size: 12px;
-
   }
-  h3,h4,h2{
+  h3,
+  h4,
+  h2 {
     font-size: 18px;
-
   }
-
 }

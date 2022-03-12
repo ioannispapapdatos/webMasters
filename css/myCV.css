@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   color: aliceblue;
   position: relative;
+  font-family: "Times New Roman", Times, serif;
 }
 /* top */
 
@@ -23,14 +24,48 @@ body {
   background-color: rgba(21, 20, 24, 0.5);
   transition: all 0.4s;
 }
-.contacts:hover {
-  transform: scale(1.1);
-}
+
 .container {
-  background-color: rgba(80, 12, 71, 0.7);
+  background-color: rgba(20, 18, 20, 0.7);
 }
 
 /* parteners logo */
 .parteners img {
   margin: 2px;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  position: relative;
+
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  color: white;
+  font-weight: 300;
+}
+.title {
+  font-family: fantasy;
+  text-shadow: 1px 2px 1px red;
+}
+
+.social i {
+  text-decoration: none;
+  color: lightyellow;
+  margin: 3px;
+}
+
+@media (max-width: 700px) {
+  p {
+    font-size: 12px;
+  }
+  h3,
+  h4,
+  h2 {
+    font-size: 18px;
+  }
 }
