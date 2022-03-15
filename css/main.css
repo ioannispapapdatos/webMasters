@@ -12,47 +12,6 @@ body {
   position: relative;
 }
 /* sliderOffer */
-.sliderOffer {
-  width: 300px;
-  height: 200px;
-  text-align: center;
-  position: absolute;
-  background-image: url("../img/digMarketing.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 4px solid white;
-  top: 120px;
-  left: 0;
-
-  color: white;
-  animation: slider 5s 1 alternate ease-in-out 3s;
-  opacity: 0;
-}
-
-.sliderBody {
-  background: rgb(114, 14, 14);
-  opacity: 0.9;
-}
-
-@keyframes slider {
-  0% {
-    transform: translateX(-300px);
-    opacity: 1;
-  }
-  30%,
-  60% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  /* 90% {
-    transform: translateX(100px);
-    opacity: 1;
-  } */
-  100% {
-    transform: translateX(1400px);
-    opacity: 1;
-  }
-}
 
 .container {
   color: white;
@@ -151,8 +110,9 @@ body {
 } */
 
 /* bottom animation */
-.promoArea {
+.promoMain {
   position: relative;
+
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -160,33 +120,67 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 2px 3px 10px white;
+  box-shadow: 1px 2px 3px 3px white;
+  background-image: url("../img/digMarketing.jpg");
+  display: flex;
 }
-/* .promoA {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  background-position: center;
 
+/*  */
+.promoBody {
+  background-color: rgba(18, 20, 18, 0.6);
+  background-position: center;
+  width: 100%;
+  height: auto;
+
+  text-align: center;
+  margin: auto;
 }
-.promoB {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background-position: center;
-} */
 
-@keyframes move {
+.promo {
+  animation: promo 4s infinite forwards ease-in-out;
+  opacity: 0;
+}
+
+#promo1 {
+  font-size: 30px;
+  animation-delay: 0.4s;
+  /* animation: promo 1s 1 forwards linear; */
+}
+#promo2 {
+  animation-delay: 1s;
+
+  /* animation: promo 1s 1 forwards linear 0.4s; */
+}
+#promo3 {
+  /* animation: promo 1s 1 forwards linear 1s; */
+  animation-delay: 1.3s;
+}
+
+@keyframes promo {
   0%,
-  60% {
-    background-image: url("../img/promoA.jpg");
+  40% {
+    opacity: 0;
   }
 
   100% {
-    background-image: url("../img/promoB.jpg");
+    opacity: 1;
+  }
+}
+
+.msg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: msg 10s infinite linear;
+}
+@keyframes msg {
+  from {
+    transform: translateX(-200px);
+    color: aqua;
+  }
+  to {
+    transform: translateX(500px);
+    color: orangered;
   }
 }
