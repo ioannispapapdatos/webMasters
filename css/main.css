@@ -184,3 +184,9 @@ body {
     color: orangered;
   }
 }
+
+/* logo box */
+.logo-box {
+  background-image: url("/img/logo_back.jpg");
+  background-position: center;
+}
